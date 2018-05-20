@@ -12,6 +12,8 @@ import Foundation
 class Concentration {
     private(set) var cards =  Array<Card>() //initializes and creates and empty array
     
+    private var gitHub: String = "Hey, this is just a simple test"
+    
     private var indexofOneandOnlyFaceUpCard: Int? {
         get {
             var foundIndex: Int?
