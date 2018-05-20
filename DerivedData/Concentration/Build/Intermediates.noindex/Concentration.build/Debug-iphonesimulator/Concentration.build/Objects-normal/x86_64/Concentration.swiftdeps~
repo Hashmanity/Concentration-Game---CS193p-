@@ -1,0 +1,272 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Concentration"
+provides-nominal:
+- "13ConcentrationAAC"
+provides-member:
+- ["13ConcentrationAAC", ""]
+- ["Sa", ""]
+- ["Sa", "shuffle"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "..<"
+- !private "<"
+- !private "=="
+- "Array"
+- "AssignmentPrecedence"
+- "Card"
+- "Concentration"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "arc4random"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "arc4random"]
+- !private ["Sa", "indices"]
+- ["Sa", "init"]
+- ["Sa", "shuffle"]
+- !private ["Sa", "sort"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "identifier"]
+- !private ["s10ArraySliceV", "isFaceUp"]
+- !private ["s10ArraySliceV", "isMatched"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "arc4random"]
+- !private ["s23BidirectionalCollectionP", "identifier"]
+- !private ["s23BidirectionalCollectionP", "indices"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "isFaceUp"]
+- !private ["s23BidirectionalCollectionP", "isMatched"]
+- !private ["s23BidirectionalCollectionP", "shuffle"]
+- !private ["s23BidirectionalCollectionP", "sort"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "arc4random"]
+- !private ["s7CVarArgP", "indices"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "shuffle"]
+- !private ["s7CVarArgP", "sort"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["13Concentration4CardV", "identifier"]
+- !private ["13Concentration4CardV", "init"]
+- !private ["13Concentration4CardV", "isFaceUp"]
+- !private ["13Concentration4CardV", "isMatched"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "arc4random"]
+- !private ["s10CollectionP", "identifier"]
+- !private ["s10CollectionP", "indices"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isFaceUp"]
+- !private ["s10CollectionP", "isMatched"]
+- !private ["s10CollectionP", "shuffle"]
+- !private ["s10CollectionP", "sort"]
+- !private ["s10CollectionP", "subscript"]
+- ["13ConcentrationAAC", "Array"]
+- ["13ConcentrationAAC", "Card"]
+- ["13ConcentrationAAC", "Int"]
+- ["13ConcentrationAAC", "cards"]
+- ["13ConcentrationAAC", "chooseCard"]
+- ["13ConcentrationAAC", "deinit"]
+- ["13ConcentrationAAC", "indexofOneandOnlyFaceUpCard"]
+- ["13ConcentrationAAC", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "arc4random"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "indices"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isFaceUp"]
+- !private ["s28CustomDebugStringConvertibleP", "isMatched"]
+- !private ["s28CustomDebugStringConvertibleP", "shuffle"]
+- !private ["s28CustomDebugStringConvertibleP", "sort"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "arc4random"]
+- !private ["s17CustomReflectableP", "identifier"]
+- !private ["s17CustomReflectableP", "indices"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isFaceUp"]
+- !private ["s17CustomReflectableP", "isMatched"]
+- !private ["s17CustomReflectableP", "shuffle"]
+- !private ["s17CustomReflectableP", "sort"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "arc4random"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "indices"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isFaceUp"]
+- !private ["s23CustomStringConvertibleP", "isMatched"]
+- !private ["s23CustomStringConvertibleP", "shuffle"]
+- !private ["s23CustomStringConvertibleP", "sort"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "arc4random"]
+- !private ["s9DecodableP", "indices"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "shuffle"]
+- !private ["s9DecodableP", "sort"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "arc4random"]
+- !private ["s9EncodableP", "indices"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "shuffle"]
+- !private ["s9EncodableP", "sort"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "arc4random"]
+- !private ["s9EquatableP", "identifier"]
+- !private ["s9EquatableP", "indices"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isFaceUp"]
+- !private ["s9EquatableP", "isMatched"]
+- !private ["s9EquatableP", "shuffle"]
+- !private ["s9EquatableP", "sort"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "arc4random"]
+- !private ["s25ExpressibleByArrayLiteralP", "identifier"]
+- !private ["s25ExpressibleByArrayLiteralP", "indices"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isFaceUp"]
+- !private ["s25ExpressibleByArrayLiteralP", "isMatched"]
+- !private ["s25ExpressibleByArrayLiteralP", "shuffle"]
+- !private ["s25ExpressibleByArrayLiteralP", "sort"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "arc4random"]
+- !private ["s17MutableCollectionP", "identifier"]
+- !private ["s17MutableCollectionP", "indices"]
+- ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "isFaceUp"]
+- !private ["s17MutableCollectionP", "isMatched"]
+- !private ["s17MutableCollectionP", "shuffle"]
+- !private ["s17MutableCollectionP", "sort"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "arc4random"]
+- !private ["s22RandomAccessCollectionP", "identifier"]
+- !private ["s22RandomAccessCollectionP", "indices"]
+- ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "isFaceUp"]
+- !private ["s22RandomAccessCollectionP", "isMatched"]
+- !private ["s22RandomAccessCollectionP", "shuffle"]
+- !private ["s22RandomAccessCollectionP", "sort"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "arc4random"]
+- !private ["s26RangeReplaceableCollectionP", "identifier"]
+- !private ["s26RangeReplaceableCollectionP", "indices"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "isFaceUp"]
+- !private ["s26RangeReplaceableCollectionP", "isMatched"]
+- !private ["s26RangeReplaceableCollectionP", "shuffle"]
+- !private ["s26RangeReplaceableCollectionP", "sort"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "arc4random"]
+- !private ["s8SequenceP", "identifier"]
+- !private ["s8SequenceP", "indices"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isFaceUp"]
+- !private ["s8SequenceP", "isMatched"]
+- !private ["s8SequenceP", "shuffle"]
+- !private ["s8SequenceP", "sort"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "arc4random"]
+- !private ["s14_ArrayProtocolP", "identifier"]
+- !private ["s14_ArrayProtocolP", "indices"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isFaceUp"]
+- !private ["s14_ArrayProtocolP", "isMatched"]
+- !private ["s14_ArrayProtocolP", "shuffle"]
+- !private ["s14_ArrayProtocolP", "sort"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "arc4random"]
+- !private ["s24_DestructorSafeContainerP", "identifier"]
+- !private ["s24_DestructorSafeContainerP", "indices"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isFaceUp"]
+- !private ["s24_DestructorSafeContainerP", "isMatched"]
+- !private ["s24_DestructorSafeContainerP", "shuffle"]
+- !private ["s24_DestructorSafeContainerP", "sort"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "arc4random"]
+- !private ["s21_ObjectiveCBridgeableP", "indices"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "shuffle"]
+- !private ["s21_ObjectiveCBridgeableP", "sort"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "Sa"
+- !private "s10ArraySliceV"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "13Concentration4CardV"
+- "s10CollectionP"
+- "13ConcentrationAAC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "s17MutableCollectionP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d5e083cf9f13e1569f6f792744530d9e"
