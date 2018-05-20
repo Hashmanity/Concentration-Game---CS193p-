@@ -57,7 +57,7 @@ class Concentration {
     }
 
     init(numberofPairsofCards: Int) {
-        assert(numberofPairsofCards > 0, "Concetration.init - you must have atleast one pair of cards")
+        assert(numberofPairsofCards > 0, "Concentration.init - you must have atleast one pair of cards")
         //the syntax 0.. is a countable range FROM ZERO TO LESS THAN NUMPAIRS
         //the underscore _ means its irrelevant like for i /we dont care
         for _ in 0..<numberofPairsofCards {
