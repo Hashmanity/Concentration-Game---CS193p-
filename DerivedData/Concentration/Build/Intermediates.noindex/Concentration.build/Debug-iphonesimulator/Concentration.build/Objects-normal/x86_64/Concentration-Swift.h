@@ -196,17 +196,11 @@ SWIFT_CLASS("_TtC13Concentration11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13Concentration14ViewController")
 @interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified flipCountLabel;
-@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified cardButtons;
-- (IBAction)touchCard:(UIButton * _Nonnull)sender;
-- (IBAction)playAgain:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

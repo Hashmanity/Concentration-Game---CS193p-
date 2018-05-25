@@ -17,9 +17,9 @@ depends-top-level:
 depends-member:
 - !private ["13Concentration4CardV", "Card"]
 - ["13Concentration4CardV", "Int"]
-- ["13Concentration4CardV", "getUniqueIdentifier"]
+- !private ["13Concentration4CardV", "getUniqueIdentifier"]
 - ["13Concentration4CardV", "identifier"]
-- ["13Concentration4CardV", "identifierFactory"]
+- !private ["13Concentration4CardV", "identifierFactory"]
 - ["13Concentration4CardV", "init"]
 - ["13Concentration4CardV", "isFaceUp"]
 - ["13Concentration4CardV", "isMatched"]
@@ -51,4 +51,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0656bef67a8482df0797a3a36ff598b0"
+interface-hash: "fba8c6a8502162e07f96a569638e9787"

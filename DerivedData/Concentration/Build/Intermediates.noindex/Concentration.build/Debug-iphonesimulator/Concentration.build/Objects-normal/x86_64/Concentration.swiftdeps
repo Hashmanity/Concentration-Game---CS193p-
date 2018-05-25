@@ -14,14 +14,15 @@ depends-top-level:
 - !private "..<"
 - !private "<"
 - !private "=="
+- !private ">"
 - "Array"
 - "AssignmentPrecedence"
 - "Card"
 - "Concentration"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
+- !private "StringLiteralType"
 - !private "arc4random"
+- !private "assert"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "arc4random"]
@@ -30,12 +31,11 @@ depends-member:
 - ["Sa", "shuffle"]
 - !private ["Sa", "sort"]
 - !private ["Sa", "subscript"]
-- !private ["s10ArraySliceV", "identifier"]
 - !private ["s10ArraySliceV", "isFaceUp"]
 - !private ["s10ArraySliceV", "isMatched"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "arc4random"]
-- !private ["s23BidirectionalCollectionP", "identifier"]
+- !private ["s23BidirectionalCollectionP", "contains"]
 - !private ["s23BidirectionalCollectionP", "indices"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "isFaceUp"]
@@ -52,13 +52,12 @@ depends-member:
 - !private ["s7CVarArgP", "shuffle"]
 - !private ["s7CVarArgP", "sort"]
 - !private ["s7CVarArgP", "subscript"]
-- !private ["13Concentration4CardV", "identifier"]
 - !private ["13Concentration4CardV", "init"]
 - !private ["13Concentration4CardV", "isFaceUp"]
 - !private ["13Concentration4CardV", "isMatched"]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "arc4random"]
-- !private ["s10CollectionP", "identifier"]
+- !private ["s10CollectionP", "contains"]
 - !private ["s10CollectionP", "indices"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "isFaceUp"]
@@ -66,17 +65,20 @@ depends-member:
 - !private ["s10CollectionP", "shuffle"]
 - !private ["s10CollectionP", "sort"]
 - !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
 - ["13ConcentrationAAC", "Array"]
 - ["13ConcentrationAAC", "Card"]
 - ["13ConcentrationAAC", "Int"]
+- !private ["13ConcentrationAAC", "assert"]
 - ["13ConcentrationAAC", "cards"]
 - ["13ConcentrationAAC", "chooseCard"]
 - ["13ConcentrationAAC", "deinit"]
-- ["13ConcentrationAAC", "indexofOneandOnlyFaceUpCard"]
+- !private ["13ConcentrationAAC", "indexofOneandOnlyFaceUpCard"]
 - ["13ConcentrationAAC", "init"]
+- !private ["s14CountableRangeV", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "arc4random"]
-- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "indices"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isFaceUp"]
@@ -85,10 +87,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "sort"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "arc4random"]
-- !private ["s17CustomReflectableP", "identifier"]
+- !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "indices"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isFaceUp"]
@@ -99,7 +102,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "arc4random"]
-- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "indices"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isFaceUp"]
@@ -126,7 +129,7 @@ depends-member:
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "arc4random"]
-- !private ["s9EquatableP", "identifier"]
+- !private ["s9EquatableP", "contains"]
 - !private ["s9EquatableP", "indices"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isFaceUp"]
@@ -136,7 +139,6 @@ depends-member:
 - !private ["s9EquatableP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "arc4random"]
-- !private ["s25ExpressibleByArrayLiteralP", "identifier"]
 - !private ["s25ExpressibleByArrayLiteralP", "indices"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "isFaceUp"]
@@ -145,11 +147,18 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "sort"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isFaceUp"]
+- !private ["s8HashableP", "isMatched"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "arc4random"]
-- !private ["s17MutableCollectionP", "identifier"]
 - !private ["s17MutableCollectionP", "indices"]
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "isFaceUp"]
@@ -159,7 +168,7 @@ depends-member:
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "arc4random"]
-- !private ["s22RandomAccessCollectionP", "identifier"]
+- !private ["s22RandomAccessCollectionP", "contains"]
 - !private ["s22RandomAccessCollectionP", "indices"]
 - ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "isFaceUp"]
@@ -167,9 +176,9 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "shuffle"]
 - !private ["s22RandomAccessCollectionP", "sort"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s15RangeExpressionP", "contains"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "arc4random"]
-- !private ["s26RangeReplaceableCollectionP", "identifier"]
 - !private ["s26RangeReplaceableCollectionP", "indices"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "isFaceUp"]
@@ -179,7 +188,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "arc4random"]
-- !private ["s8SequenceP", "identifier"]
+- !private ["s8SequenceP", "contains"]
 - !private ["s8SequenceP", "indices"]
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "isFaceUp"]
@@ -187,9 +196,13 @@ depends-member:
 - !private ["s8SequenceP", "shuffle"]
 - !private ["s8SequenceP", "sort"]
 - !private ["s8SequenceP", "subscript"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "arc4random"]
-- !private ["s14_ArrayProtocolP", "identifier"]
 - !private ["s14_ArrayProtocolP", "indices"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "isFaceUp"]
@@ -199,7 +212,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "arc4random"]
-- !private ["s24_DestructorSafeContainerP", "identifier"]
 - !private ["s24_DestructorSafeContainerP", "indices"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "isFaceUp"]
@@ -208,6 +220,11 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "sort"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "arc4random"]
@@ -216,6 +233,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "shuffle"]
 - !private ["s21_ObjectiveCBridgeableP", "sort"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
 - !private "s10ArraySliceV"
@@ -224,7 +242,9 @@ depends-nominal:
 - "s7CVarArgP"
 - !private "13Concentration4CardV"
 - "s10CollectionP"
+- !private "s10ComparableP"
 - "13ConcentrationAAC"
+- !private "s14CountableRangeV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
@@ -234,16 +254,32 @@ depends-nominal:
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "s17MutableCollectionP"
 - "s22RandomAccessCollectionP"
+- !private "s15RangeExpressionP"
 - "s26RangeReplaceableCollectionP"
 - "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - "s14_ArrayProtocolP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -269,4 +305,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "40686810a22c4acb2970541104fe8a17"
+interface-hash: "26bddde704e9b75400674c65d45122f4"

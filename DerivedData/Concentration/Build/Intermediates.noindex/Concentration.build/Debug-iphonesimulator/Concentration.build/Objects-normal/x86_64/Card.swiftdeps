@@ -1,6 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "Card"
+- "=="
 provides-nominal:
 - "13Concentration4CardV"
 provides-member:
@@ -8,24 +9,44 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+="
+- "=="
 - "AssignmentPrecedence"
+- "Bool"
 - "BooleanLiteralType"
 - "Card"
 - "FloatLiteralType"
+- "Hashable"
 - "Int"
 - "IntegerLiteralType"
 depends-member:
-- !private ["13Concentration4CardV", "Card"]
+- ["13Concentration4CardV", "=="]
+- ["13Concentration4CardV", "Bool"]
+- ["13Concentration4CardV", "Card"]
 - ["13Concentration4CardV", "Int"]
-- ["13Concentration4CardV", "getUniqueIdentifier"]
-- ["13Concentration4CardV", "identifier"]
-- ["13Concentration4CardV", "identifierFactory"]
+- ["13Concentration4CardV", "deinit"]
+- !private ["13Concentration4CardV", "getUniqueIdentifier"]
+- ["13Concentration4CardV", "hashValue"]
+- !private ["13Concentration4CardV", "identifier"]
+- !private ["13Concentration4CardV", "identifierFactory"]
 - ["13Concentration4CardV", "init"]
 - ["13Concentration4CardV", "isFaceUp"]
 - ["13Concentration4CardV", "isMatched"]
-- ["13Concentration4CardV", "shuffleCards"]
+- !private ["s9EquatableP", "Card"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "getUniqueIdentifier"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "identifier"]
+- !private ["s9EquatableP", "identifierFactory"]
+- !private ["s8HashableP", "Card"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "getUniqueIdentifier"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "identifier"]
+- !private ["s8HashableP", "identifierFactory"]
 depends-nominal:
 - "13Concentration4CardV"
+- "s9EquatableP"
+- "s8HashableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -51,4 +72,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0656bef67a8482df0797a3a36ff598b0"
+interface-hash: "0ca1e47804718657ea97efbf70f25a26"

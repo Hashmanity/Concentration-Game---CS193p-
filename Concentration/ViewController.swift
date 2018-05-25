@@ -26,12 +26,25 @@ class ViewController: UIViewController {
     
     private(set) var flipCount = 0 {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
     
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    private func updateFlipCountLabel() {
+        let attributes : [NSAttributedStringKey: Any] = [
+            .strokeWidth : 5.0,
+            .strokeColor : #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        ]
+        
+        let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributedString
+    }
     
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet private var cardButtons: [UIButton]!
     
     
@@ -75,15 +88,15 @@ class ViewController: UIViewController {
     private lazy var emojiChoices: [String] = emojiThemes[emojiThemes.count.arc4random]
 
     //gonna use card identifiers as key to get emoji as value
-    private var emoji = Dictionary<Int, String>() //or use [Int:String]()
+    private var emoji = [Card:String]() //or use [Int:String]()
     
     private func emoji(for card: Card) -> String {
         print(emojiChoices)
-        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+        if emoji[card] == nil, emojiChoices.count > 0 {
                 let randomIndex = emojiChoices.count.arc4random
-                emoji[card.identifier] = emojiChoices.remove(at: randomIndex) //this ensures each identifier has a unique emoji
+                emoji[card] = emojiChoices.remove(at: randomIndex) //this ensures each identifier has a unique emoji
             }
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
 }
 

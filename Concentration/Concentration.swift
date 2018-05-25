@@ -11,24 +11,10 @@ import Foundation
 
 class Concentration {
     private(set) var cards =  Array<Card>() //initializes and creates and empty array
-    
-    private var gitHub: String = "Hey, this is just a simple test"
-    
+        
     private var indexofOneandOnlyFaceUpCard: Int? {
         get {
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    if (foundIndex == nil) {
-                        foundIndex = index
-                    }
-                        //by now, it will be the case where we have 2 face up cards
-                    else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+            return cards.indices.filter { cards[$0].isFaceUp }.oneandOnly
         }
         
         set(newIndex) {
@@ -45,7 +31,7 @@ class Concentration {
         if !cards[index].isMatched {
             //case 1: check if cards match
             if let matchIndex = indexofOneandOnlyFaceUpCard, matchIndex != index {
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -82,5 +68,11 @@ extension Array {
         {
             sort { (_,_) in arc4random() < arc4random() }
         }
+    }
+}
+
+extension Collection {
+    var oneandOnly: Element? {
+        return count == 1 ? first : nil
     }
 }

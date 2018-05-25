@@ -187,10 +187,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBW-j8-2gd">
-                                <rect key="frame" x="76" y="710" width="223" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBW-j8-2gd">
+                                <rect key="frame" x="104" y="731" width="167" height="51"/>
                                 <color key="backgroundColor" red="0.94048905372619629" green="0.59612780809402466" blue="0.14474701881408691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="0.0" green="1" blue="0.5181306004524231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.96989458799362183" green="0.9181550145149231" blue="0.059767834842205048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
